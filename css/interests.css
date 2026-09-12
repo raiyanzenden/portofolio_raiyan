@@ -1,0 +1,52 @@
+/* ==========================================================================
+   Personal Interests Section
+   ========================================================================== */
+
+.interests {
+  border-top: 1px solid var(--border);
+}
+
+.interests__inner {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-2xl);
+}
+
+.interests__label-wrap {
+  flex-shrink: 0;
+  padding-top: 0.15rem;
+}
+
+.interests__items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+  line-height: 1.8;
+}
+
+.interests__item {
+  font-family: var(--font-display);
+  font-size: var(--text-lg);
+  font-weight: 600;
+  color: var(--text-secondary);
+  transition: color var(--duration-fast) ease;
+}
+
+.interests__item:hover {
+  color: var(--text-primary);
+}
+
+.interests__sep {
+  font-size: var(--text-lg);
+  color: var(--text-faint);
+  margin: 0 0.4rem;
+  user-select: none;
+}
+
+/* ---- Responsive ---- */
+@media (max-width: 768px) {
+  .interests__inner {
+    flex-direction: column;
+    gap: var(--space-md);
+  }
+}

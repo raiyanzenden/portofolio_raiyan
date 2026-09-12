@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Raiyan Danish Aufa — Software Engineering & UI/UX Design</title>
+  <meta name="description"
+    content="Personal portfolio of Raiyan Danish Aufa — Software Engineering student and UI/UX designer based in Banyumas, Indonesia.">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Raiyan Danish Aufa — Software Engineering & UI/UX Design">
+  <meta property="og:description"
+    content="Personal portfolio of Raiyan Danish Aufa — Software Engineering student, UI/UX designer, and creative developer.">
+  <meta property="og:type" content="website">
+
+  <!-- Favicon -->
+  <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='16' fill='%23080809'/><text x='50%' y='58%' dominant-baseline='middle' text-anchor='middle' font-family='sans-serif' font-weight='800' font-size='56' fill='%23c5a47e'>R</text></svg>">
+
+  <!-- Google Fonts: Syne, Plus Jakarta Sans & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Syne:wght@700;800&display=swap"
+    rel="stylesheet">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/nav.css">
+  <link rel="stylesheet" href="css/hero.css">
+  <link rel="stylesheet" href="css/about.css">
+  <link rel="stylesheet" href="css/projects.css">
+  <link rel="stylesheet" href="css/skills.css">
+  <link rel="stylesheet" href="css/achievement.css">
+  <link rel="stylesheet" href="css/contact.css">
+  <link rel="stylesheet" href="css/footer.css">
+</head>
+
+<body>
+
+  <!-- ====================================================================
+       Navigation — Minimal Editorial Top Bar
+       ==================================================================== -->
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <div class="nav__inner">
+      <a href="#home" class="nav__brand" aria-label="Home">
+        <span>Raiyan</span><span class="nav__brand-dot">.</span>
+      </a>
+
+      <div class="nav__right">
+        <div class="nav__menu">
+          <a href="#home" class="nav__link is-active" data-i18n="nav.home">Home</a>
+          <a href="#about" class="nav__link" data-i18n="nav.about">About</a>
+          <a href="#projects" class="nav__link" data-i18n="nav.projects">Projects</a>
+          <a href="#skills" class="nav__link" data-i18n="nav.skills">Skills</a>
+          <a href="#achievement" class="nav__link" data-i18n="nav.achievement">Awards</a>
+          <a href="#contact" class="nav__link" data-i18n="nav.contact">Contact</a>
+        </div>
+
+        <!-- Clean Minimal Language Switcher -->
+        <div class="nav__lang" role="group" aria-label="Language switcher">
+          <button class="nav__lang-btn is-active" data-lang-btn="en" aria-label="English">EN</button>
+          <span class="nav__lang-sep">/</span>
+          <button class="nav__lang-btn" data-lang-btn="id" aria-label="Indonesian">ID</button>
+        </div>
+      </div>
+
+      <button class="nav__hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span class="nav__hamburger-line"></span>
+        <span class="nav__hamburger-line"></span>
+        <span class="nav__hamburger-line"></span>
+      </button>
+    </div>
+
+    <!-- Mobile Navigation Overlay -->
+    <div class="nav__mobile-overlay" role="dialog" aria-label="Mobile menu">
+      <a href="#home" class="nav__mobile-link is-active" data-i18n="nav.home">Home</a>
+      <a href="#about" class="nav__mobile-link" data-i18n="nav.about">About</a>
+      <a href="#projects" class="nav__mobile-link" data-i18n="nav.projects">Projects</a>
+      <a href="#skills" class="nav__mobile-link" data-i18n="nav.skills">Skills</a>
+      <a href="#achievement" class="nav__mobile-link" data-i18n="nav.achievement">Awards</a>
+      <a href="#contact" class="nav__mobile-link" data-i18n="nav.contact">Contact</a>
+
+      <div class="nav__mobile-lang-row">
+        <span>Language:</span>
+        <div class="nav__lang" style="border-left: none; padding-left: 0;">
+          <button class="nav__lang-btn is-active" data-lang-btn="en">EN</button>
+          <span class="nav__lang-sep">/</span>
+          <button class="nav__lang-btn" data-lang-btn="id">ID</button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- ====================================================================
+       Hero Section — Editorial Portrait & Typography
+       ==================================================================== -->
+  <section id="home" class="hero">
+    <div class="site-container hero__inner">
+
+      <!-- Left Column: Typography Focal Point -->
+      <div class="hero__content reveal">
+        <span class="hero__kicker" data-i18n="hero.kicker">Software Engineering & UI/UX Design</span>
+
+        <h1 class="hero__name">
+          <span class="hero__name-line">Raiyan</span>
+          <span class="hero__name-line">Danish Aufa</span>
+        </h1>
+
+        <p class="hero__statement" data-i18n="hero.statement">
+          Software Engineering student building thoughtful web applications, intuitive interfaces, and practical digital experiences.
+        </p>
+
+        <!-- Subtle Editorial Metadata Strip -->
+        <div class="hero__meta-strip">
+          <span class="hero__meta-item" data-i18n="hero.meta.location">Banyumas, Indonesia</span>
+          <span class="hero__meta-sep">•</span>
+          <span class="hero__meta-item" data-i18n="hero.meta.focus">Web & UI/UX</span>
+          <span class="hero__meta-sep">•</span>
+          <span class="hero__meta-item" data-i18n="hero.meta.role">Vocational Student (RPL)</span>
+        </div>
+
+        <!-- Editorial Action Buttons -->
+        <div class="hero__actions">
+          <a href="#projects" class="btn-editorial btn-editorial--solid">
+            <span data-i18n="hero.cta.work">View Projects</span>
+            <span>↓</span>
+          </a>
+          <a href="#contact" class="btn-editorial">
+            <span data-i18n="hero.cta.contact">Get in Touch</span>
+            <span>↗</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Right Column: Editorial Portrait Frame -->
+      <div class="hero__visual-wrap reveal">
+        <div class="hero__portrait-frame">
+          <img src="assets/images/muka.jpeg" alt="Raiyan Danish Aufa" onerror="this.style.display='none'">
+          <span class="hero__portrait-corner hero__portrait-corner--tl"></span>
+          <span class="hero__portrait-corner hero__portrait-corner--tr"></span>
+          <span class="hero__portrait-corner hero__portrait-corner--bl"></span>
+          <span class="hero__portrait-corner hero__portrait-corner--br"></span>
+          <div class="hero__portrait-caption-bar">
+            <span class="hero__portrait-caption-name">Raiyan Danish Aufa</span>
+            <span class="hero__portrait-caption-role" data-i18n="hero.portrait.tag">Student / Designer</span>
+          </div>
+          <div class="hero__portrait-placeholder">
+            <span class="hero__portrait-tag" data-i18n="hero.portrait.tag">Student / Designer</span>
+            <span class="hero__portrait-caption" data-i18n="hero.portrait.desc">Software Engineering student based in Banyumas, Indonesia.</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <hr class="section-divider">
+
+
+  <!-- ====================================================================
+       About Section — Editorial Asymmetric Composition
+       ==================================================================== -->
+  <section id="about" class="about section">
+    <div class="site-container">
+
+      <div class="about__grid">
+        <!-- Left Column: Lead & Metadata Table -->
+        <div class="about__left reveal">
+          <span class="section-meta-label" data-i18n="about.meta.label">01 / Overview</span>
+          <h2 class="about__lead" data-i18n="about.lead">
+            I create digital experiences where <em>clean logic</em> meets <em>intuitive design</em>.
+          </h2>
+
+          <div class="about__quick-meta">
+            <div class="about__meta-row">
+              <span class="about__meta-key" data-i18n="about.meta.major.key">Major</span>
+              <span class="about__meta-val" data-i18n="about.meta.major.val">Software Engineering (RPL)</span>
+            </div>
+            <div class="about__meta-row">
+              <span class="about__meta-key" data-i18n="about.meta.school.key">Education</span>
+              <span class="about__meta-val" data-i18n="about.meta.school.val">Vocational High School (SMK)</span>
+            </div>
+            <div class="about__meta-row">
+              <span class="about__meta-key" data-i18n="about.meta.location.key">Location</span>
+              <span class="about__meta-val" data-i18n="about.meta.location.val">Banyumas, Central Java</span>
+            </div>
+            <div class="about__meta-row">
+              <span class="about__meta-key" data-i18n="about.meta.focus.key">Focus</span>
+              <span class="about__meta-val" data-i18n="about.meta.focus.val">Frontend, UI/UX & Game Dev</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Column: Narrative & Focus Areas -->
+        <div class="about__right reveal">
+          <div class="about__narrative">
+            <p data-i18n="about.p1">
+              Currently studying Software Engineering (RPL), with a core focus on web development fundamentals, backend logic, and clean interface systems. I enjoy understanding how code behaves beneath the surface and ensuring it looks cohesive on the front.
+            </p>
+            <p data-i18n="about.p2">
+              Alongside development, I explore Figma interface design, 2D game mechanics in GDevelop, video editing, and competitive esports. To me, technical discipline and visual creativity build upon each other.
+            </p>
+          </div>
+
+          <div class="about__interests-wrap">
+            <div class="about__interests-title" data-i18n="about.interests.title">Focus & Interests</div>
+            <div class="about__interests-list">
+              <span class="about__interest-item">Web Development</span>
+              <span class="about__interest-item">UI/UX Design</span>
+              <span class="about__interest-item">2D Game Dev</span>
+              <span class="about__interest-item">Video Editing</span>
+              <span class="about__interest-item">Music & Guitar</span>
+              <span class="about__interest-item">Competitive Gaming</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <hr class="section-divider">
+
+
+  <!-- ====================================================================
+       Projects Section — Editorial Asymmetric Works
+       ==================================================================== -->
+  <section id="projects" class="projects section">
+    <div class="site-container">
+
+      <div class="projects__header reveal">
+        <div>
+          <span class="section-meta-label" data-i18n="projects.meta.label">02 / Portfolio</span>
+          <h2 class="heading-section" data-i18n="projects.title" style="margin-bottom: 0;">Featured Projects</h2>
+        </div>
+        <span class="projects__counter" data-i18n="projects.count">03 Selected Works</span>
+      </div>
+
+      <div class="projects__list">
+
+        <!-- Project 01 — trip.dwk -->
+        <article class="project-entry reveal">
+          <div class="project-entry__visual">
+            <div class="project-entry__bar">
+              <div class="project-entry__dots">
+                <span class="project-entry__dot"></span>
+                <span class="project-entry__dot"></span>
+                <span class="project-entry__dot"></span>
+              </div>
+              <span class="project-entry__url">trip.dwk — Open-Trip Travel Platform</span>
+              <span class="project-entry__tag-badge">Full Stack</span>
+            </div>
+            <div class="project-entry__screen">
+              <img src="assets/projects/tripdwk.png" alt="trip.dwk — Open-Trip Travel Platform">
+            </div>
+            <div class="project-entry__placeholder">
+              <span class="project-entry__placeholder-tag">Full Stack Web</span>
+              <span class="project-entry__placeholder-name">trip.dwk</span>
+              <span style="font-size: var(--text-xs); opacity: 0.6;">Open-Trip Travel Platform</span>
+            </div>
+          </div>
+
+          <div class="project-entry__info">
+            <span class="project-entry__number" data-i18n="project1.num">01</span>
+            <h3 class="project-entry__title" data-i18n="project1.name">trip.dwk</h3>
+            <p class="project-entry__desc" data-i18n="project1.desc">
+              An open-trip travel web platform designed for smooth exploration and booking flow. Combines clean typography and interface design with structured backend logic.
+            </p>
+            <div class="project-entry__stack">
+              <span class="project-entry__stack-item">PHP</span>
+              <span class="project-entry__stack-item">MySQL</span>
+              <span class="project-entry__stack-item">JavaScript</span>
+              <span class="project-entry__stack-item">CSS3</span>
+            </div>
+            <div class="project-entry__links">
+              <a href="#" class="btn-link">
+                <span data-i18n="project1.view">Explore Project</span>
+                <span>→</span>
+              </a>
+              <a href="#" class="btn-link">
+                <span data-i18n="project1.code">Source Code</span>
+                <span>↗</span>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 02 — Modern Landing Page -->
+        <article class="project-entry reveal">
+          <div class="project-entry__visual">
+            <div class="project-entry__bar">
+              <div class="project-entry__dots">
+                <span class="project-entry__dot"></span>
+                <span class="project-entry__dot"></span>
+                <span class="project-entry__dot"></span>
+              </div>
+              <span class="project-entry__url">Landing Page — Ergonomic Web Interface</span>
+              <span class="project-entry__tag-badge">Frontend</span>
+            </div>
+            <div class="project-entry__screen">
+              <img src="assets/projects/landingpage.png" alt="Responsive Landing Page">
+            </div>
+            <div class="project-entry__placeholder">
+              <span class="project-entry__placeholder-tag">Frontend Showcase</span>
+              <span class="project-entry__placeholder-name">Landing Page</span>
+              <span style="font-size: var(--text-xs); opacity: 0.6;">Ergonomic Web Interface</span>
+            </div>
+          </div>
+
+          <div class="project-entry__info">
+            <span class="project-entry__number" data-i18n="project2.num">02</span>
+            <h3 class="project-entry__title" data-i18n="project2.name">Responsive Landing Page</h3>
+            <p class="project-entry__desc" data-i18n="project2.desc">
+              A modern, highly responsive landing page focusing on visual hierarchy, typography, seamless mobile ergonomics, and vanilla frontend performance.
+            </p>
+            <div class="project-entry__stack">
+              <span class="project-entry__stack-item">HTML5</span>
+              <span class="project-entry__stack-item">Vanilla CSS</span>
+              <span class="project-entry__stack-item">JavaScript</span>
+            </div>
+            <div class="project-entry__links">
+              <a href="#" class="btn-link">
+                <span data-i18n="project2.view">View Project</span>
+                <span>→</span>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 03 — 2D Game Project -->
+        <article class="project-entry reveal">
+          <div class="project-entry__visual">
+            <div class="project-entry__bar">
+              <div class="project-entry__dots">
+                <span class="project-entry__dot"></span>
+                <span class="project-entry__dot"></span>
+                <span class="project-entry__dot"></span>
+              </div>
+              <span class="project-entry__url">2D Game Project — GDevelop Engine</span>
+              <span class="project-entry__tag-badge">Game Dev</span>
+            </div>
+            <div class="project-entry__screen">
+              <img src="assets/projects/gdvelop.png" alt="2D Game Project — GDevelop">
+            </div>
+            <div class="project-entry__placeholder">
+              <span class="project-entry__placeholder-tag">Game Logic &amp; Design</span>
+              <span class="project-entry__placeholder-name">2D Game Project</span>
+              <span style="font-size: var(--text-xs); opacity: 0.6;">Interactive GDevelop Engine</span>
+            </div>
+          </div>
+
+          <div class="project-entry__info">
+            <span class="project-entry__number" data-i18n="project3.num">03</span>
+            <h3 class="project-entry__title" data-i18n="project3.name">2D Game Project</h3>
+            <p class="project-entry__desc" data-i18n="project3.desc">
+              An interactive 2D game built with GDevelop, exploring custom player mechanics, level progression, event scripting, and responsive controls.
+            </p>
+            <div class="project-entry__stack">
+              <span class="project-entry__stack-item">GDevelop</span>
+              <span class="project-entry__stack-item">Game Mechanics</span>
+              <span class="project-entry__stack-item">Level Design</span>
+            </div>
+            <div class="project-entry__links">
+              <a href="#" class="btn-link">
+                <span data-i18n="project3.view">See Details</span>
+                <span>→</span>
+              </a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+
+    </div>
+  </section>
+
+  <hr class="section-divider">
+
+
+  <!-- ====================================================================
+       Skills Section — Editorial Toolkit Matrix
+       ==================================================================== -->
+  <section id="skills" class="skills section">
+    <div class="site-container">
+
+      <div class="reveal" style="margin-bottom: var(--space-xl);">
+        <span class="section-meta-label" data-i18n="skills.meta.label">03 / Capabilities</span>
+        <h2 class="heading-section" data-i18n="skills.title" style="margin-bottom: 0;">Skills & Toolkit</h2>
+      </div>
+
+      <div class="skills__grid reveal">
+
+        <!-- Category 01: Development -->
+        <div class="skills__column">
+          <div class="skills__column-header">
+            <span class="skills__column-number">01</span>
+            <h3 class="skills__column-title" data-i18n="skills.cat1">Development</h3>
+          </div>
+          <div class="skills__items">
+            <div class="skills__item">HTML5 Semantic</div>
+            <div class="skills__item">CSS3 & Layouts</div>
+            <div class="skills__item">JavaScript (ES6+)</div>
+            <div class="skills__item">PHP Fundamentals</div>
+            <div class="skills__item">MySQL Database</div>
+            <div class="skills__item">Git & GitHub</div>
+          </div>
+        </div>
+
+        <!-- Category 02: Design -->
+        <div class="skills__column">
+          <div class="skills__column-header">
+            <span class="skills__column-number">02</span>
+            <h3 class="skills__column-title" data-i18n="skills.cat2">Design</h3>
+          </div>
+          <div class="skills__items">
+            <div class="skills__item">UI/UX Design</div>
+            <div class="skills__item">Wireframing & Flow</div>
+            <div class="skills__item">Figma & Canva</div>
+            <div class="skills__item">Visual Hierarchy</div>
+            <div class="skills__item">Design Systems</div>
+          </div>
+        </div>
+
+        <!-- Category 03: Creative -->
+        <div class="skills__column">
+          <div class="skills__column-header">
+            <span class="skills__column-number">03</span>
+            <h3 class="skills__column-title" data-i18n="skills.cat3">Creative</h3>
+          </div>
+          <div class="skills__items">
+            <div class="skills__item">Video Editing</div>
+            <div class="skills__item">Content Creation</div>
+            <div class="skills__item">Audio & Guitar</div>
+            <div class="skills__item">Media Production</div>
+          </div>
+        </div>
+
+        <!-- Category 04: Game Dev -->
+        <div class="skills__column">
+          <div class="skills__column-header">
+            <span class="skills__column-number">04</span>
+            <h3 class="skills__column-title" data-i18n="skills.cat4">Game Dev</h3>
+          </div>
+          <div class="skills__items">
+            <div class="skills__item">GDevelop Engine</div>
+            <div class="skills__item">2D Character Mechanics</div>
+            <div class="skills__item">Level Design</div>
+            <div class="skills__item">Game Event Logic</div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <hr class="section-divider">
+
+
+  <!-- ====================================================================
+       Achievement Section — Competitive Esports Recognition
+       ==================================================================== -->
+  <section id="achievement" class="achievement section">
+    <div class="site-container achievement__container">
+
+      <div class="reveal" style="text-align: center; margin-bottom: var(--space-xl);">
+        <span class="section-meta-label" data-i18n="achievement.meta.label">04 / Recognition</span>
+        <h2 class="heading-section" data-i18n="achievement.title" style="margin-bottom: 0;">Achievement</h2>
+      </div>
+
+      <div class="achievement-card reveal">
+        <div class="achievement-trophy-box">
+          <svg class="achievement-trophy-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6" />
+            <path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18" />
+            <path d="M4 22h16" />
+            <path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22" />
+            <path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22" />
+            <path d="M18 2H6v7a6 6 0 0 0 12 0V2Z" />
+          </svg>
+        </div>
+
+        <div class="achievement-content">
+          <div class="achievement-badge-row">
+            <span class="achievement-tag" data-i18n="achievement.place">1st Place</span>
+            <span class="achievement-year">• Poco Extreme</span>
+          </div>
+          <h3 class="achievement-title" data-i18n="achievement.event">Poco Extreme Esports — Banyumas</h3>
+          <p class="achievement-desc" data-i18n="achievement.desc">
+            Represented Banyumas in competitive Free Fire esports and secured 1st place. Competitive tournament play instilled fast decision-making, team synergy, and focus under pressure.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <hr class="section-divider">
+
+
+  <!-- ====================================================================
+       Contact Section — Editorial Inquiries
+       ==================================================================== -->
+  <section id="contact" class="contact section">
+    <div class="site-container">
+
+      <div class="contact__box reveal">
+        <span class="section-meta-label" data-i18n="contact.meta.label">05 / Inquiries</span>
+        <h2 class="contact__cta-title" data-i18n="contact.cta">Let's build something.</h2>
+        <p class="contact__subtitle" data-i18n="contact.sub">
+          Got a project, idea, or just want to say hi — I'm open to conversations.
+        </p>
+
+        <!-- Quick Copy Email Widget -->
+        <div class="contact__copy-box">
+          <span class="contact__email-text">danishraiyan05@gmail.com</span>
+          <button class="contact__copy-btn js-copy-email" data-email="danishraiyan05@gmail.com"
+            aria-label="Copy Email Address">
+            <span data-i18n="contact.copybtn">Copy</span>
+          </button>
+        </div>
+
+        <!-- Social Links Grid -->
+        <div class="contact__socials-grid">
+          <a href="https://github.com/raiyandanishaufa" target="_blank" rel="noopener noreferrer" class="social-pill"
+            aria-label="GitHub">
+            <svg class="social-pill-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <path
+                d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22" />
+            </svg>
+            <span>GitHub</span>
+          </a>
+
+          <a href="https://www.instagram.com/raiyansonglapan?stkn=MTF2a3M3YXdiemUyaQ==" target="_blank" rel="noopener noreferrer" class="social-pill"
+            aria-label="Instagram">
+            <svg class="social-pill-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+            </svg>
+            <span>Instagram</span>
+          </a>
+
+          <a href="https://www.linkedin.com/in/raiyan-danish-aufa-09a487429" target="_blank" rel="noopener noreferrer" class="social-pill"
+            aria-label="LinkedIn">
+            <svg class="social-pill-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 016-6z" />
+              <rect x="2" y="9" width="4" height="12" />
+              <circle cx="4" cy="4" r="2" />
+            </svg>
+            <span>LinkedIn</span>
+          </a>
+
+          <a href="https://wa.me/6285710139945" target="_blank" rel="noopener noreferrer" class="social-pill"
+            aria-label="WhatsApp">
+            <svg class="social-pill-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <path
+                d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z" />
+            </svg>
+            <span>WhatsApp</span>
+          </a>
+
+          <a href="mailto:danishraiyan05@gmail.com" class="social-pill" aria-label="Send Direct Email">
+            <svg class="social-pill-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+              <polyline points="22,6 12,13 2,6" />
+            </svg>
+            <span>Email</span>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ====================================================================
+       Footer
+       ==================================================================== -->
+  <footer class="footer">
+    <div class="site-container footer__inner">
+      <div class="footer__brand-row">
+        <span class="footer__copy" data-i18n="footer.copy">© 2026 Raiyan Danish Aufa</span>
+      </div>
+      <div class="footer__status-tag">
+        <span class="status-dot"></span>
+        <span data-i18n="footer.status">Banyumas, Indonesia • WIB</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast Notification Container -->
+  <div class="toast-notice" role="status" aria-live="polite">
+    <span class="toast-msg" data-i18n="contact.toast">Email copied to clipboard!</span>
+  </div>
+
+  <!-- JavaScript Module -->
+  <script src="js/app.js" defer></script>
+
+</body>
+
+</html>
